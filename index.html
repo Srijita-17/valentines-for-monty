@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>For Monty ❤️</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>Happy Valentine’s Day Monty 💖</h1>
+    <p>The way you love me.</p>
+
+    <!-- 🎵 Background Music -->
+    <audio id="bgMusic" autoplay loop>
+        <source src="sahiba.mp3" type="audio/mpeg">
+        Your browser does not support audio.
+    </audio>
+
+    <!-- 💖 Reasons -->
+    <button onclick="showReason()">💖 Reasons I Love You</button>
+    <p id="reason"></p>
+
+    <!-- ⏳ Countdown -->
+    <p id="countdown"></p>
+
+    <!-- 🔒 Unlock -->
+    <button onclick="askPassword()">🔒 Unlock My Heart</button>
+
+    <!-- 💘 Valentine Question -->
+    <div class="valentine-box">
+        <h2>Will you be my Valentine? ❤️</h2>
+
+        <button onclick="yesClicked()">YES 💖</button>
+        <button id="noBtn">NO 🙄</button>
+
+        <p id="valentineMsg"></p>
+    </div>
+
+    <!-- JS -->
+    <script src="script.js"></script>
+
+    <!-- 🔊 Chrome autoplay fix -->
+    <script>
+        document.addEventListener("click", () => {
+            const music = document.getElementById("bgMusic");
+            if (music.paused) {
+                music.play();
+            }
+        });
+    </script>
+
+</body>
+</html>

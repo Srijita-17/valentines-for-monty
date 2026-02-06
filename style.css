@@ -1,0 +1,55 @@
+body {
+    background: maroon;
+    color: pink;
+    font-family: 'Comic Sans MS', cursive;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+button {
+    background: whitesmoke;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    margin: 10px;
+    font-size: 1em;
+}
+
+.valentine-box {
+    margin-top: 40px;
+}
+
+#valentineMsg {
+    font-size: 1.4em;
+    margin-top: 10px;
+}
+
+#noBtn {
+    position: absolute;
+}
+
+.gallery img {
+    width: 220px;
+    margin: 15px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px pink;
+    transition: transform 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+}
+
+/* 💖 Floating hearts */
+.heart {
+    position: fixed;
+    bottom: -20px;
+    font-size: 20px;
+    animation: floatUp 4s linear infinite;
+}
+
+@keyframes floatUp {
+    from { transform: translateY(0); opacity: 1; }
+    to { transform: translateY(-100vh); opacity: 0; }
+}
